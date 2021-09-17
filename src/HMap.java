@@ -1,7 +1,7 @@
 public interface HMap {
     void clear();
-    boolean containsKey();
-    boolean containsValue();
+    boolean containsKey(Object key);
+    boolean containsValue(Object value);
     HSet entrySet();
     boolean equals(Object o);
     Object get(Object key);
@@ -13,4 +13,11 @@ public interface HMap {
     Object remove(Object key);
     int size();
     HCollection values();
+    interface HEntry {
+        boolean equals(Object o);
+        Object getKey();
+        Object getValue();
+        int HashCode();
+        Object setValue(Object value);
+    }
 }

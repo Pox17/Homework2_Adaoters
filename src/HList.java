@@ -24,6 +24,6 @@ public interface HList extends HCollection {
     HListIterator listIterator(int index);
     Object remove(int index);
     Object set(int index, Object element);
-    HList subList();
+    HList subList(int fromIndex, int toIndex);
 
 }

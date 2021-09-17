@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1yH7F0KBMr4TYpGFbeLyUwsXTbE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,5 +42,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="522" y="277" key="Github.ShareDialog/0.0.1366.768/-389.-1080.1920.1080@0.0.1366.768" timestamp="1631896617842" />
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1631897043648">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768/-389.-1080.1920.1080@0.0.1366.768" timestamp="1631897043648" />
   </component>
 </project>

@@ -28,11 +28,9 @@ public class ListIteratorTest {
         ListAdapter lAd = setList();
         HListIterator lIter = lAd.listIterator();
         assertTrue(lIter.hasNext());
-        lIter.next();
-        lIter.next();
-        lIter.next();
-        lIter.next();
-        lIter.next();
+        while(lIter.hasNext()) {
+            lIter.next();
+        }
         assertFalse(lIter.hasNext());
     }
 
@@ -58,7 +56,11 @@ public class ListIteratorTest {
         while(lIter.hasPrevious()) {
             assertEquals(lAd.get(i--),lIter.previous());
         }
-        assertThrows();
+        assertThrows(UnsupportedOperationException.class, () ->lIter.previous());
+        while(lIter.hasNext()) {
+            lIter.next();
+        }
+        lIter.remove();
     }
 
     @Test
